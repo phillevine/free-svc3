@@ -1,0 +1,27 @@
+glob2==0.7
+tqdm==4.62.3
+librosa==0.10.1
+scipy==1.7.2
+tensorboard==2.7.0
+webrtcvad==2.0.10
+colorlog==6.7.0
+hydra-core==1.3.2
+hydra_colorlog==1.2.0
+omegaconf==2.3.0
+pyreaper
+protobuf==3.20.0
+matplotlib==3.7.1
+transformers==4.28.1
+# pyreaper @ git+https://github.com/r9y9/pyreaper.git@v0.0.9#egg=pyreaper
+huggingface_hub
+nnAudio
+numpy==1.24
+gdown
+torchaudio==2.1.2
+torch==2.1.2
+pytorch_lightning
+s3prl
+stopit
+praat-parselmouth
+webrtcvad
+asteroid_filterbanks

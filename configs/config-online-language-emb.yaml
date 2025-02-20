@@ -1,0 +1,32 @@
+defaults:
+- common
+- config
+
+data:
+  use_lang_emb: true
+  num_langs: 11
+  lang_dim: 192 # same size as hidden_channels to facilitate the addition of the conditioning
+  lang2id:
+    chinese: 0
+    dutch: 1
+    english: 2
+    french: 3
+    german: 4
+    italian: 5
+    japanese: 6
+    other: 7
+    polish: 8
+    portuguese: 9
+    spanish: 10
+  use_spk_emb: false
+  spk_embeddings_dir: null # compute on forward (model)
+  spk_encoder_type: null # compute on forward (model) | ECAPA2SpeakerEncoder16k
+  content_encoder_type: null # compute on forward (model) | hubert
+  content_encoder_ckpt: null # compute on forward (model) | lengyue233/content-vec-best
+
+model:
+  use_spk_emb: true
+  spk_encoder_type: ECAPA2SpeakerEncoder16k
+  spk_encoder_ckpt: null  # Not used for ECAPA2SpeakerEncoder16k
+  content_encoder_type: hubert # or wavlm
+  content_encoder_ckpt: lengyue233/content-vec-best # or models/wavlm/WavLM-Large.pt
