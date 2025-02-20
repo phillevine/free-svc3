@@ -179,3 +179,9 @@ spin.ckpt
 /target/
 /source/
 /toVM/
+/models/hifigan/generator_v1
+/models/wavlm/WavLM-Large.pt
+/FreeVC-24-ckpts/D-freevc-24.pth
+/FreeVC-24-ckpts/freevc-24.pth
+/FreeVC-24-ckpts/G-freevc-24.pth
+/models/spin/spin.ckpt
